@@ -14,6 +14,10 @@
         message: ''
       }
     },
+    // 不用函数用对象，也是可以的。
+    // data : {
+    //   message: ''
+    // },
     route: {
       data: function(transition) {
         this.$broadcast("bar-change",this.$route.params.id)

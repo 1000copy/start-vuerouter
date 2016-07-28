@@ -15,7 +15,12 @@ export default {
   },
   // route: {
   //   data: function(transition) {
-  //       transition.next({msg: this.$route.params.id });    
+  //     console.log("route.data")
+  //     transition.next({msg: this.$route.params.id });    
+  //   },
+  //   canReuse:function(){
+  //     console.log("canReuse")
+  //     return false
   //   }
   // },
   events: {
