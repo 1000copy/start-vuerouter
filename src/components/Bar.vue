@@ -16,7 +16,8 @@
     },
     route: {
       data: function(transition) {
-          transition.next({message: this.$route.params.id });    
+        this.$broadcast("bar-change",this.$route.params.id)
+        transition.next({message: this.$route.params.id });    
       }
     }
   }

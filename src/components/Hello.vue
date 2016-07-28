@@ -18,20 +18,35 @@ export default {
   //       transition.next({msg: this.$route.params.id });    
   //   }
   // },
-  watch:{
-    id:function(value){
-      value = parseInt(value)
-      if (value === 1){
-         this.$set('msg', 'one')
-      }else if (value === 2){
-         this.$set('msg', 'two')
-      }else if (value === 3){
-         this.$set('msg', 'three')
-      }else {
-         this.$set('msg', 'Foo')
-      }
+  events: {
+    'bar-change': function (value) {
+        console.log(value)
+        value = parseInt(value)
+        if (value === 1){
+           this.$set('msg', 'one')
+        }else if (value === 2){
+           this.$set('msg', 'two')
+        }else if (value === 3){
+           this.$set('msg', 'three')
+        }else {
+           this.$set('msg', 'Foo')
+        }
     }
-  }
+  }//,
+  // watch:{
+  //   id:function(value){
+  //     value = parseInt(value)
+  //     if (value === 1){
+  //        this.$set('msg', 'one')
+  //     }else if (value === 2){
+  //        this.$set('msg', 'two')
+  //     }else if (value === 3){
+  //        this.$set('msg', 'three')
+  //     }else {
+  //        this.$set('msg', 'Foo')
+  //     }
+  //   }
+  // }
 }
 </script>
 
