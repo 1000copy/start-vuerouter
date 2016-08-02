@@ -12,7 +12,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style>
