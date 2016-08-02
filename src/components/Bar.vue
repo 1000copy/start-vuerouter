@@ -1,5 +1,5 @@
 <template>
-  <p>This is bar! Params is {{message}}</p>
+  <p>This is bar! Params is ${{$route.params.id}} </p>
   <hello :id="$route.params.id"></hello>
 </template>
 
